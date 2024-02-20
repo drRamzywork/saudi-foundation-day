@@ -1,0 +1,40 @@
+import localFont from 'next/font/local'
+import { useRouter } from "next/router";
+import styles from "@/styles/Home.module.css";
+
+const hrair = localFont({
+  src: [
+    {
+      path: "../../../public/assets/fonts/harir.otf",
+      style: "bold",
+      weight: '800',
+    },
+    {
+      path: "../../../public/assets/fonts/harir.otf",
+      style: "normal",
+      weight: '400',
+    },
+
+
+
+  ],
+});
+
+
+export default function Layout({ children }) {
+  const router = useRouter();
+  const combinedStyles = {
+    ...hrair.style,
+  };
+
+
+  return (
+    <>
+
+      <main style={combinedStyles} dir={router.locale === 'ar' ? 'rtl' : 'ltr'}>
+        {children}
+      </main >
+
+    </>
+  )
+}
