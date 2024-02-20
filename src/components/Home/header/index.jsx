@@ -36,21 +36,21 @@ const Header = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             className={styles.languages_container}>
-            <Link href={`/videos`} className={styles.lang} locale="ar" passHref>
+            <a href={`/ar/videos`} className={styles.lang} locale="ar" passHref>
               <Image width={50} height={50} src={'/assets/svgs/ar_flag.svg'} />
-            </Link>
-            <Link href={`/videos`} className={styles.lang} locale="en" passHref>
+            </a>
+            <a href={`/en/videos`} className={styles.lang} locale="en" passHref>
               <Image width={50} height={50} src={'/assets/svgs/en_flag.svg'} />
-            </Link>
-            <Link href={`/videos`} className={styles.lang} locale="fr" passHref>
+            </a>
+            <a href={`/fr/videos`} className={styles.lang} locale="fr" passHref>
               <Image width={50} height={50} src={'/assets/svgs/fr_flag.svg'} />
-            </Link>
-            <Link href={`/videos`} className={styles.lang} locale="es" passHref>
+            </a>
+            <a href={`/es/videos`} className={styles.lang} locale="es" passHref>
               <Image width={50} height={50} src={'/assets/svgs/es_flag.svg'} />
-            </Link>
-            <Link href={`/videos`} className={styles.lang} locale="ru" passHref>
+            </a>
+            <a href={`/ru/videos`} className={styles.lang} locale="ru" passHref>
               <Image width={50} height={50} src={'/assets/svgs/ru_flag.svg'} />
-            </Link>
+            </a>
           </motion.div>
         }
       </div>
