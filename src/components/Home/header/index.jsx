@@ -14,27 +14,42 @@ const Header = () => {
 
       <header id='header' className={styles.header}>
         <div className="container">
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }} className={styles.logo_container}>
-            <Link href={'/'} className={styles.logo}>
-              {router.pathname === '/' ?
+          {router.pathname === '/' ?
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }} className={styles.logo_container}>
+              <Link href={'/'} style={router.pathname !== '/' ? { bottom: '-31%', marginBottom: '150px' } : {}}
+
+                className={styles.logo}>
                 <Image width={528} height={452} src={'/assets/svgs/logo.svg'} />
-                :
+              </Link>
+
+            </motion.div>
+            :
+
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }} className={styles.logo_container}>
+              <Link href={'/'}
+                className={styles.logo_dark}
+              >
                 <Image width={528} height={452} src={'/assets/svgs/logo_dark.svg'} />
-              }
+              </Link>
 
-            </Link>
+            </motion.div>
+          }
 
-          </motion.div>
 
 
         </div>
-      </header>
+      </header >
 
-      {router.pathname === '/' &&
+      {
+        router.pathname === '/' &&
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}

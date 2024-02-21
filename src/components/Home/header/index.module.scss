@@ -4,7 +4,7 @@ header.header {
   width: 100%;
 
   .logo_container {
-    height: 183px;
+    min-height: 183px;
     width: 100%;
     // overflow: hidden;
     position: relative;
@@ -38,6 +38,19 @@ header.header {
         }
         @media screen and (max-width: 450px) {
           height: 318px;
+        }
+      }
+    }
+
+    display: flex;
+    .logo_dark {
+      margin: auto;
+      // background-color: red;
+      img {
+        height: 305px;
+        @media screen and (max-width: 450px) {
+          width: 100% !important;
+          height: 165px !important;
         }
       }
     }
