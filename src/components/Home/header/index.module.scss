@@ -4,22 +4,22 @@ header.header {
   width: 100%;
 
   .logo_container {
-    min-height: 183px;
     width: 100%;
-    // overflow: hidden;
     position: relative;
-
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 16px;
     .logo {
-      position: absolute;
-      bottom: 50%;
-      right: 50%;
-      transform: translate(50%, 50%);
+      // position: absolute;
+      // bottom: 50%;
+      // right: 50%;
+      // transform: translate(50%, 50%);
 
       text-decoration: none;
       height: fit-content;
       width: fit-content;
       display: block;
-      padding-top: 50px;
+      // padding-top: 50px;
 
       @media screen and (min-width: 1200px) {
         bottom: 50% !important;
@@ -69,10 +69,12 @@ header.header {
   // flex-direction: row-reverse;
 
   @media screen and (max-width: 450px) {
-    margin-top: 70px;
+    // margin-top: 70px;
   }
   .lang {
-    margin-right: 16px;
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     transform: scale(1);
