@@ -5,10 +5,12 @@ import styles from "@/styles/Home.module.css";
 import Header from "@/components/Home/header";
 import BgSection from "@/components/Home/BgSection";
 import Footer from "@/Footer";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -40,7 +42,7 @@ export default function Home() {
       <main className={styles.main}>
         <Header />
         <BgSection />
-        <Footer />
+        {router.pathname !== "/" && <Footer />}
       </main>
     </>
   );
