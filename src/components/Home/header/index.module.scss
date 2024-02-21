@@ -21,18 +21,18 @@ header.header {
       display: block;
       // padding-top: 50px;
 
-      @media screen and (min-width: 1200px) {
-        bottom: 50% !important;
-      }
+      // @media screen and (min-width: 1200px) {
+      //   bottom: 50% !important;
+      // }
 
-      @media screen and (max-width: 450px) {
-        bottom: 34%;
-        padding-top: 0;
-      }
+      // @media screen and (max-width: 450px) {
+      //   bottom: 34%;
+      //   padding-top: 0;
+      // }
 
       img {
         object-fit: contain;
-        height: 226px;
+        height: 200px;
         // @media screen and (max-width: 550px) {
         //   height: 583px;
         // }
@@ -49,7 +49,7 @@ header.header {
       margin-top: 5px;
 
       img {
-        height: 179px;
+        height: 200px;
         object-fit: contain;
 
         @media screen and (max-width: 450px) {
