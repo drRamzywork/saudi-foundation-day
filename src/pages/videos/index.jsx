@@ -77,7 +77,7 @@
 
 
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Footer from "@/Footer";
 import Header from "@/components/Home/header";
 import styles from './index.module.scss';
@@ -91,6 +91,7 @@ const Videos = () => {
   const router = useRouter();
   const { t } = useTranslation('common');
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const videoRefs = useRef([]);
 
   const videoData = Array.from({ length: 18 }).map((_, index) => {
     const number = index + 1;
@@ -102,8 +103,17 @@ const Videos = () => {
   });
 
   const handleVideoSelect = (index) => {
-    setSelectedVideo(index); // Update the selected video index
+    setSelectedVideo(index);
+    if (videoRefs.current[index]) {
+      const videoElement = videoRefs.current[index];
+      videoElement.play().then(() => {
+        videoElement.pause();
+        videoElement.currentTime = 0;
+      }).catch(error => console.error("Video play failed", error));
+    }
   };
+
+
 
   return (
     <section id='videos' dir={router.locale === 'ar' ? 'rtl' : 'ltr'} className={styles.videos}>
@@ -138,21 +148,16 @@ const Videos = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 1 }} className={styles.video}>
-
-
-
                 <video
-                  key={video.url}
+                  ref={el => videoRefs.current[index] = el} // Assign ref to each video
                   width="560"
                   height="315"
-                  loop
-                  // autoPlay
                   controls
                 >
-                  <source src={video.url}
-                    type="video/mp4" />
+                  <source src={video.url} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+
               </motion.div>
             )}
           </motion.div>
