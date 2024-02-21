@@ -4,11 +4,15 @@ header.header {
   .logo_container {
     .logo {
       text-decoration: none;
+      height: fit-content;
+      width: fit-content;
+      display: block;
+
       img {
         object-fit: contain;
         height: 284px;
         @media screen and (max-width: 550px) {
-          height: 183px;
+          height: auto;
         }
       }
     }
