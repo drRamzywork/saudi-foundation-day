@@ -3,40 +3,38 @@ header.header {
   // margin-top: 30px;
   .logo_container {
     .logo {
+      text-decoration: none;
       img {
         object-fit: contain;
         height: 284px;
         @media screen and (max-width: 550px) {
           height: 183px;
         }
-        @media screen and (max-width: 420px) {
-          height: 394px !important;
-        }
       }
     }
   }
+}
 
-  .languages_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    // flex-direction: row-reverse;
-    margin-top: -25px;
-    margin-bottom: 30px;
-    .lang {
-      margin-right: 16px;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      transform: scale(1);
+.languages_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  // flex-direction: row-reverse;
+  margin-top: -25px;
+  margin-bottom: 30px;
+  .lang {
+    margin-right: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
 
-      &:hover {
-        transform: scale(1.2);
-      }
-      img {
-        width: 40px;
-        height: 40px;
-      }
+    &:hover {
+      transform: scale(1.2);
+    }
+    img {
+      width: 40px;
+      height: 40px;
     }
   }
 }

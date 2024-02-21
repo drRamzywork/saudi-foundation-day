@@ -6,7 +6,10 @@ section.person {
     height: 100%;
     background-size: 100% 100%;
     img {
-      height: 361px;
+      height: 288px;
+      // @media screen and (max-width: 450px) {
+      //   // height: auto;
+      // }
     }
   }
 }
