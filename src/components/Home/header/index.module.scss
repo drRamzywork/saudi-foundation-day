@@ -32,13 +32,13 @@ header.header {
 
       img {
         object-fit: contain;
-        height: 487px;
-        @media screen and (max-width: 550px) {
-          height: 583px;
-        }
-        @media screen and (max-width: 450px) {
-          height: 708px;
-        }
+        height: 226px;
+        // @media screen and (max-width: 550px) {
+        //   height: 583px;
+        // }
+        // @media screen and (max-width: 450px) {
+        //   height: 708px;
+        // }
       }
     }
 
@@ -46,11 +46,10 @@ header.header {
     .logo_dark {
       margin: auto;
       // background-color: red;
-      margin-top: -140px;
-      margin-bottom: -103px;
+      margin-top: 5px;
 
       img {
-        height: 487px;
+        height: 179px;
         object-fit: contain;
 
         @media screen and (max-width: 450px) {
@@ -70,7 +69,7 @@ header.header {
   // flex-direction: row-reverse;
 
   @media screen and (max-width: 450px) {
-    margin-top: 162px;
+    margin-top: 70px;
   }
   .lang {
     margin-right: 16px;

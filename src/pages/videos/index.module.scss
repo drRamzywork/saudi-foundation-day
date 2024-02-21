@@ -48,3 +48,27 @@ section.videos {
     }
   }
 }
+
+section.videos[dir="ltr"] {
+  * {
+    font-family: var(--en-font) !important;
+  }
+
+  .video_container {
+    .icon_container {
+      img {
+      }
+    }
+
+    .title {
+      p {
+        font-family: var(--en-font) !important;
+      }
+    }
+
+    .video {
+      iframe {
+      }
+    }
+  }
+}

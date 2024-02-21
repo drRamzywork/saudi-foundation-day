@@ -19,12 +19,30 @@ const hrair = localFont({
 
   ],
 });
+const majalla = localFont({
+  src: [
+    {
+      path: "../../../public/assets/fonts/majalla.ttf",
+      style: "bold",
+      weight: '800',
+    },
+    {
+      path: "../../../public/assets/fonts/majalla.ttf",
+      style: "normal",
+      weight: '400',
+    },
+
+
+
+  ],
+});
 
 
 export default function Layout({ children }) {
   const router = useRouter();
   const combinedStyles = {
     ...hrair.style,
+    ...majalla.style
   };
 
 
