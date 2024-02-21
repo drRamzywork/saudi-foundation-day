@@ -9,6 +9,9 @@ header.header {
         @media screen and (max-width: 550px) {
           height: 183px;
         }
+        @media screen and (max-width: 420px) {
+          height: 394px !important;
+        }
       }
     }
   }
