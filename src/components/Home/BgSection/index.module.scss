@@ -1,6 +1,10 @@
 section.person {
   margin-top: auto;
   height: 50vh;
+  @media screen and (max-height: 550px) {
+    margin-top: 0 !important;
+    height: 100% !important;
+  }
 
   .img_container {
     background-image: url("/assets/svgs/background_layer.svg");
@@ -11,14 +15,14 @@ section.person {
 
     @media screen and (max-width: 450px) {
       // max-height: 250px;
-      max-height: 50vh;
+      // max-height: 50vh;
     }
     img {
       height: 100%;
       object-fit: contain;
-      @media screen and (max-width: 450px) {
+      @media screen and (max-height: 550px) {
         // margin-right: 104px;
-        // height: 400px;
+        height: 201px !important;
       }
     }
   }
