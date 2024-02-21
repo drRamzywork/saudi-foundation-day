@@ -10,13 +10,13 @@ section.person {
       // max-height: 250px;
       max-height: 50vh;
     }
-
     img {
       height: 288px;
       object-fit: contain;
-
       @media screen and (max-width: 450px) {
-        height: 427px;
+        margin-right: 82px;
+
+        height: 432px;
       }
     }
   }
