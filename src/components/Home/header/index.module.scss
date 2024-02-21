@@ -26,18 +26,18 @@ header.header {
       }
 
       @media screen and (max-width: 450px) {
-        bottom: 33%;
+        bottom: 10%;
         padding-top: 0;
       }
 
       img {
         object-fit: contain;
-        height: 284px;
+        height: 487px;
         @media screen and (max-width: 550px) {
           height: 583px;
         }
         @media screen and (max-width: 450px) {
-          height: 318px;
+          height: 708px;
         }
       }
     }
@@ -63,8 +63,10 @@ header.header {
   justify-content: center;
   flex-wrap: wrap;
   // flex-direction: row-reverse;
-  margin-top: -25px;
-  margin-bottom: 30px;
+
+  @media screen and (max-width: 450px) {
+    margin-top: 162px;
+  }
   .lang {
     margin-right: 16px;
     cursor: pointer;

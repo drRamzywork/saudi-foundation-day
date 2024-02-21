@@ -23,7 +23,7 @@ const Header = () => {
               <Link href={'/'} style={router.pathname !== '/' ? { bottom: '-31%', marginBottom: '150px' } : {}}
 
                 className={styles.logo}>
-                <Image width={528} height={452} src={'/assets/svgs/logo.svg'} />
+                <img alt='logo' src={'/assets/imgs/logo.png'} />
               </Link>
 
             </motion.div>
@@ -37,7 +37,7 @@ const Header = () => {
               <Link href={'/'}
                 className={styles.logo_dark}
               >
-                <Image width={528} height={452} src={'/assets/svgs/logo_dark.svg'} />
+                <img alt='logo' src={'/assets/imgs/dark_logo.png'} />
               </Link>
 
             </motion.div>
