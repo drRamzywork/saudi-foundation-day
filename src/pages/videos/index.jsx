@@ -85,8 +85,10 @@ import Image from "next/image";
 import { useTranslation } from 'next-i18next';
 import { motion } from "framer-motion";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useRouter } from "next/router";
 
 const Videos = () => {
+  const router = useRouter();
   const { t } = useTranslation('common');
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -103,7 +105,7 @@ const Videos = () => {
   };
 
   return (
-    <section id='videos' className={styles.videos}>
+    <section id='videos' dir={router.locale === 'ar' ? 'rtl' : 'ltr'} className={styles.videos}>
 
       <Header />
 
