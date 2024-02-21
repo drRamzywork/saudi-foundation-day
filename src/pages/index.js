@@ -23,20 +23,14 @@ export default function Home() {
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="يوم التأسيس السعودي" />
         <meta property="og:description" content="يوم التأسيس السعودي " />
-        <meta
-          property="og:image"
-          content="https://zamakanweb1.suwa.io/logo_mobile_footer.png"
-        />
-        <meta property="og:url" content="https://zamakanweb1.suwa.io" />
+        <meta property="og:image" content="/assets/imgs/dark_logo.png" />
+        <meta property="og:url" content="https://www.foundingday.org" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="يوم التأسيس السعودي" />
         <meta name="twitter:description" content="يوم التأسيس السعودي " />
-        <meta
-          name="twitter:image"
-          content="https://zamakanweb1.suwa.io/logo_mobile_footer.png"
-        />
+        <meta name="twitter:image" content="/assets/imgs/dark_logo.png" />
       </Head>
 
       <main className={styles.main}>
