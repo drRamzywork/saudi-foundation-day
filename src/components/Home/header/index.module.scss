@@ -46,11 +46,16 @@ header.header {
     .logo_dark {
       margin: auto;
       // background-color: red;
+      margin-top: -140px;
+      margin-bottom: -103px;
+
       img {
-        height: 305px;
+        height: 487px;
+        object-fit: contain;
+
         @media screen and (max-width: 450px) {
           width: 100% !important;
-          height: 165px !important;
+          // height: 341px !important;
         }
       }
     }
