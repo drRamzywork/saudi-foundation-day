@@ -49,7 +49,7 @@ export default function Layout({ children }) {
   return (
     <>
 
-      <main style={combinedStyles} dir={router.locale === 'ar' ? 'rtl' : 'ltr'}>
+      <main style={combinedStyles}>
         {children}
       </main >
 

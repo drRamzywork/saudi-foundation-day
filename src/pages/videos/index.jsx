@@ -96,8 +96,9 @@ const Videos = () => {
     const number = index + 1;
     return {
       scene: t(`${number}Scene`),
-      url: t(`${number}Url`),
+      url: `${t(`${number}Url`)}?autoplay=1`,
     };
+
   });
 
   const handleVideoSelect = (index) => {
@@ -130,7 +131,7 @@ const Videos = () => {
                 {video.scene}
               </p>
             </div>
-            {selectedVideo === index && ( // Only display the video if it's the one selected
+            {selectedVideo === index && (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 100 }}

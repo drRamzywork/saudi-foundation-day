@@ -13,6 +13,7 @@ section.person {
 
     img {
       height: 288px;
+      object-fit: contain;
 
       @media screen and (max-width: 450px) {
         height: 427px;

@@ -13,7 +13,7 @@ const BgSection = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 1 }}
         className={styles.img_container}>
-        <Image src={'/assets/svgs/person.svg'} width={566} height={561.62} />
+        <Image src={'/assets/imgs/person.png'} width={566} height={561.62} />
       </motion.div>
     </section>
   )
