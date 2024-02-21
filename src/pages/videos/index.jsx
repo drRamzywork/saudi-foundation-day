@@ -73,9 +73,9 @@ const Videos = () => {
               <iframe
                 width="560"
                 height="315"
-                src={video.url + "?modestbranding=1&rel=0"}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                src={video.url} // Ensure this URL does not contain autoplay-enabling query parameters
+                title="Video player"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
             </div>
