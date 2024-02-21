@@ -14,12 +14,19 @@ section.videos {
 
     .icon_container {
       margin-bottom: 24px;
+      @media screen and (max-width: 450px) {
+        margin-bottom: 16px;
+      }
       img {
       }
     }
 
     .title {
       p {
+        @media screen and (max-width: 450px) {
+          margin-bottom: 0;
+        }
+
         font-family: var(--arabic-font);
         color: #ffffff;
         font-size: 47px;
