@@ -1,18 +1,43 @@
 header.header {
   // padding-top: 130px;
   // margin-top: 30px;
+  width: 100%;
+
   .logo_container {
+    height: 183px;
+    width: 100%;
+    // overflow: hidden;
+    position: relative;
+
     .logo {
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
+
       text-decoration: none;
       height: fit-content;
       width: fit-content;
       display: block;
+      padding-top: 50px;
+
+      @media screen and (min-width: 1200px) {
+        bottom: 50% !important;
+      }
+
+      @media screen and (max-width: 450px) {
+        bottom: 33%;
+        padding-top: 0;
+      }
 
       img {
         object-fit: contain;
         height: 284px;
         @media screen and (max-width: 550px) {
-          height: auto;
+          height: 583px;
+        }
+        @media screen and (max-width: 450px) {
+          height: 318px;
         }
       }
     }
