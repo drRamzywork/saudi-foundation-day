@@ -14,9 +14,8 @@ section.person {
       height: 288px;
       object-fit: contain;
       @media screen and (max-width: 450px) {
-        margin-right: 82px;
-
-        height: 432px;
+        margin-right: 104px;
+        height: 400px;
       }
     }
   }
