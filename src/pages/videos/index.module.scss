@@ -9,7 +9,7 @@ section.videos {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 45px;
+    margin-top: 16px;
     width: 100%;
 
     .icon_container {
@@ -35,11 +35,14 @@ section.videos {
       width: 100%;
       display: flex;
 
-      iframe {
+      video {
         margin: auto;
-        width: 1000px;
-        height: 500px;
+        width: 200px;
+        object-fit: contain;
+
+        height: 50%;
         border-radius: 14px;
+        box-shadow: 0px 3px 7px 7px #0000003d;
         @media screen and (max-width: 550px) {
           width: 100% !important;
           height: 529px !important;
@@ -67,7 +70,7 @@ section.videos[dir="ltr"] {
     }
 
     .video {
-      iframe {
+      video {
       }
     }
   }

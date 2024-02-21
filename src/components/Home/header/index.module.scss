@@ -67,8 +67,11 @@ header.header {
   justify-content: center;
   flex-wrap: wrap;
   // flex-direction: row-reverse;
-  margin-top: 30px;
-  margin-bottom: 6px;
+  // margin-top: 30px;
+  // margin-bottom: 6px;
+
+  margin-top: auto;
+  margin-bottom: auto;
   @media screen and (max-width: 450px) {
     // margin-top: 70px;
   }

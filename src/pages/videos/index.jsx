@@ -138,14 +138,21 @@ const Videos = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 1 }} className={styles.video}>
-                <iframe
+
+
+
+                <video
+                  key={video.url}
                   width="560"
                   height="315"
-                  src={video.url}
-                  title="Video player"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+                  loop
+                  // autoPlay
+                  controls
+                >
+                  <source src={video.url}
+                    type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </motion.div>
             )}
           </motion.div>
@@ -167,3 +174,7 @@ export async function getStaticProps({ locale }) {
     },
   };
 }
+
+
+
+
