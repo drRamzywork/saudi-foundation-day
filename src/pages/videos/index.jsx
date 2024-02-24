@@ -95,9 +95,11 @@ const Videos = () => {
 
   const videoData = Array.from({ length: 18 }).map((_, index) => {
     const number = index + 1;
+
     return {
+
       scene: t(`${number}Scene`),
-      url: `${t(`${number}Url`)}?autoplay=1`,
+      url: `${t(`${number}Url`)}`,
     };
 
   });
